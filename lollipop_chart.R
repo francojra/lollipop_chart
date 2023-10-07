@@ -58,3 +58,16 @@ p <- ggplot(data, aes(x = x, y = y)) +
   ylab("Value of Y") +
   ggtitle("How did groups A and D perform?")
 p
+
+### Adicionar anotações
+
+p + annotate("text", x = grep("D", data$x), 
+                     y = data$y[which(data$x == "D")]*1.2, 
+           label = "Group D is very impressive", 
+           color = "orange", size = 4  , angle = 0, fontface = "bold", hjust = 0) + 
+  
+    annotate("text", x = grep("A", data$x), 
+             y = data$y[which(data$x == "A")]*1.2, 
+           label = paste("Group A is not too bad\n (val=",data$y[which(data$x == "A")] %>% 
+                           round(2),")",sep = "" ) , 
+           color = "orange", size = 4 , angle = 0, fontface = "bold", hjust = 0) 
