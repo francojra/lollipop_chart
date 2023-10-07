@@ -35,3 +35,10 @@ data <- data.frame(
   y = abs(rnorm(26))
 )
 View(data)
+
+### Reordenar os dados
+
+data <- data %>%
+  arrange(y) %>%
+  mutate(x = factor(x,x))
+View(data)
