@@ -43,7 +43,7 @@ data <- data %>%
   mutate(x = factor(x,x))
 View(data)
 
-### Gráfico
+### Produzir gráfico
 
 p <- ggplot(data, aes(x = x, y = y)) +
   geom_segment(aes(x = x, xend = x, y = 0, yend = y), 
