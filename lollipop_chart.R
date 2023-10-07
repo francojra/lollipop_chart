@@ -6,4 +6,9 @@
 
 # Introdução -------------------------------------------------------------------------------------------------------------------------------
 
+### Este post descreve como construir um gráfico 'pirulito' (lollipop) com R e ggplot2.
+### Aqui mostramos como destacar um ou vários grupos de interesse para transmitir sua
+### mensagem mais eficientemente.
 
+### Anotações é ponto chave na visualização de dados: elas permitem ao leitor focar
+### sobre a mensagem principal que quer ser transmitida.
