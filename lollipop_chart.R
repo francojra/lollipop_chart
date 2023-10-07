@@ -21,5 +21,17 @@
 
 # Criando o gráfico ------------------------------------------------------------------------------------------------------------------------
 
+### Carregar pacotes
 
+library(ggplot2)
+library(dplyr)
+library(hrbrthemes)
 
+### Criar conjunto de dados
+
+set.seed(1000)
+data <- data.frame(
+  x = LETTERS[1:26], 
+  y = abs(rnorm(26))
+)
+View(data)
